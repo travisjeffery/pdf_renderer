@@ -9,7 +9,6 @@ class NavigationTest < ActiveSupport::IntegrationCase
     assert_equal 'attachment; filename="contents.pdf"',
       headers['Content-Disposition']
     assert_equal 'application/pdf', headers['Content-Type']
-    assert_match /Prawn/, page.body
   end
 
   protected
